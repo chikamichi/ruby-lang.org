@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title></title>
+  <link href="http://www.ruby-lang.org/atom.xml" rel="self"/>
+  <link href="http://www.ruby-lang.org/"/>
+  <updated>2011-08-07T02:36:37+02:00</updated>
+  <id>http://www.ruby-lang.org/</id>
+  <author>
+    <name>Ruby</name>
+    
+  </author>
+
+  
+</feed>

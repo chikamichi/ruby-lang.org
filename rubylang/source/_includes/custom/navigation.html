@@ -1,0 +1,9 @@
+{% capture locale %}{{ page.url | truncate: 3, "" | remove: "/" }}{% endcapture %}
+{% if locale == "" %}{% assign locale = "en" %}{% endif %}
+{% if page.locale %}{% assign locale = page.locale %}{% endif %}
+<a class="to-home" href="/{{ locale }}"><img class="logo" src="/images/ruby.png" /></a>
+<ul role=main-navigation>
+  {% for link in site.locales[locale].nav %}
+    <li><a href="/{{ locale }}/{{ link.url }}/">{{ link.text }}</a></li>
+  {% endfor %}
+</ul>

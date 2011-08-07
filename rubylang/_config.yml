@@ -1,0 +1,204 @@
+# ----------------------- #
+#      Main Configs       #
+# ----------------------- #
+
+rubylang:
+  ssh_user:       user:domain.com
+  document_root:  ~/website.com/
+  deploy_default: rsync
+  public_dir:     rubylang/public    # compiled site directory
+  source_dir:     rubylang/source    # source file directory
+  posts_dir:      rubylang/_posts    # directory for blog files
+  themes_dir:     rubylang/.themes   # directory for blog files
+  new_post_ext:   markdown  # default new post file extension when using the new_post task
+  new_page_ext:   markdown  # default new page file extension when using the new_page task
+
+locales:
+  available:
+  - en
+  - fr
+  en:
+    credits: Credits
+    nav:
+    - url: downloads
+      text: Downloads
+    - url: documentation
+      text: Documentation
+    - url: libraries
+      text: Libraries
+    - url: community
+      text: Community
+    - url: news
+      text: News
+    - url: security
+      text: Security
+    - url: about
+      text: About Ruby
+    menus:
+      - title: Get started
+        subtitle: the easy way
+        links:
+        - url: http://tryruby.org
+          text: Try Ruby! (in your browser)
+        - url: downloads
+          text: Download Ruby
+        - url: documentation/quickstart
+          text: Ruby in 20mn
+        - url: documentation/ruby-from-other-languages
+          text: Ruby from other languages
+      - title: Explore
+        subtitle: a new world…
+        links:
+          - url: documentation
+            text: Documentation
+          - url: http://www.amazon.com/s/ref=sr_nr_n_5?ie=UTF8&rs=1000&keywords=Ruby&rh=i%3Aaps%2Ck%3ARuby%2Ci%3Astripbooks%2Cn%3A1000%2Cn%3A5
+            text: Books
+          - url: Libraries
+            text: Libraries
+          - url: documentation/success-stories
+            text: Success Stories
+      - title: Participate
+        subtitle: in a friendly and growing community
+        links:
+          - url: community/mailing-lists
+            text: Mailing lists
+            subtext: Talk about Ruby with programmers from all around the world.
+          - url: community/user-groups
+            text: User groups
+            subtext: Get in contact with Rubyists in your area.
+          - url: community/weblogs
+            text: Blogs
+            subtext: Read about what’s happening right now in the Ruby community.
+          - url: community/ruby-core
+            text: Ruby Core
+            subtext: Help polish the rough edges of the latest Ruby.
+          - url: http://redmine.ruby-lang.org
+            text: Issue tracker
+            subtext: Report or help solve issues in Ruby.
+  fr:
+    credits: À propos de ce site
+    nav:
+    - url: downloads
+      text: Téléchargements
+    - url: documentation
+      text: Documentation
+    - url: libraries
+      text: Bibliothèques
+    - url: community
+      text: Communauté
+    - url: news
+      text: Actualités
+    - url: security
+      text: Sécurité
+    - url: about
+      text: À propos de Ruby
+    menus:
+      - title: Découvrez Ruby
+        subtitle: sans peine
+        links:
+        - url: http://tryruby.org
+          text: Essayez Ruby !
+        - url: downloads
+          text: Téléchargez Ruby
+        - url: documentation/quickstart
+          text: Ruby en 20mn
+        - url: documentation/ruby-from-other-languages
+          text: Vous venez d'un autre langage ?
+      - title: Explorez
+        subtitle: un nouvel univers
+        links:
+          - url: documentation
+            text: Documentation
+          - url: http://www.amazon.com/s/ref=sr_nr_n_5?ie=UTF8&rs=1000&keywords=Ruby&rh=i%3Aaps%2Ck%3ARuby%2Ci%3Astripbooks%2Cn%3A1000%2Cn%3A5
+            text: Livres
+          - url: libraries
+            text: Bibliothèques
+          - url: documentation/success-stories
+            text: Témoignages
+      - title: Participez
+        subtitle: à la vie de la communauté
+        links:
+          - url: community/mailing-lists
+            text: Listes de diffusion
+            subtext: discutez de Ruby avec des programmeurs du monde entier.
+          - url: community/user-groups
+            text: Groupes d'utilisateurs
+            subtext: entrez en contact avec d’autres rubyistes de votre région.
+          - url: community/weblogs
+            text: Blogs
+            subtext: suivez toute l’actualité de la communauté Ruby.
+          - url: community/ruby-core
+            text: Ruby Core
+            subtext: apportez votre aide à l'élaboration du prochain Ruby.
+          - url: http://redmine.ruby-lang.org
+            text: Bugs
+            subtext: aidez à corriger et/ou améliorer Ruby.
+
+url: http://www.ruby-lang.org
+title: Ruby
+subtitle: A Programmer's Best Friend
+author: Ruby
+simple_search: http://google.com/search
+
+# RSS / Email (optional) subscription links (change if using something like Feedburner)
+subscribe_rss: /atom.xml
+subscribe_email:
+# RSS feeds can list your email address if you like
+email:
+
+# ----------------------- #
+#    Jekyll & Plugins     #
+# ----------------------- #
+
+root: /
+port: 4000
+permalink: /blog/:year/:month/:day/:title/
+source: source
+destination: public
+plugins: plugins
+code_dir: downloads/code
+category_dir: blog/categories
+markdown: rdiscount
+pygments: false # default python pygments have been replaced by pygments.rb
+paginate: 10 # Posts per page on the blog index
+recent_posts: 5 # Posts in the sidebar Recent Posts section
+
+# list each of the sidebar modules you want to include, in the order you want them to appear.
+# To add custom asides, create files in /source/_includes/custom/asides/ and add them to the list like 'custom/asides/custom_aside_name.html'
+default_asides: [asides/menus.html, asides/recent_posts.html, asides/twitter.html, asides/delicious.html, asides/pinboard.html]
+
+# Each layout uses the default asides, but they can have their own asides instead. Simply uncomment the lines below
+# and add an array with the asides you want to use.
+# blog_index_asides:
+# post_asides:
+# page_asides:
+
+# ----------------------- #
+#   3rd Party Settings    #
+# ----------------------- #
+
+# Twitter
+twitter_user:
+twitter_tweet_count: 4
+twitter_show_replies: false
+twitter_follow_button: true
+twitter_show_follower_count: false
+twitter_tweet_button: true
+
+# Google Plus
+google_plus_one: true
+google_plus_one_size: medium
+
+# Pinboard
+pinboard_user:
+pinboard_count: 3
+
+# Delicious
+delicious_user:
+delicious_count: 3
+
+# Disqus Comments
+disqus_short_name:
+
+# Google Analytics
+google_analytics_tracking_id:

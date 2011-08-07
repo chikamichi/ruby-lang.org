@@ -1,0 +1,5 @@
+{% capture locale %}{{ page.url | truncate: 3, "" | remove: "/" }}{% endcapture %}
+{% if locale == "" %}{% assign locale = "en" %}{% endif %}
+{% if page.locale %}{% assign locale = page.locale %}{% endif %}
+<nav role=navigation>{% include navigation.html %}</nav>
+<a href="/{{ locale }}/credits">{{ site.locales[locale].credits }}</a>

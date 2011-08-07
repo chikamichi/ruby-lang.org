@@ -1,0 +1,8 @@
+<hgroup>
+  <div id="langs">
+    {% for lang in site.locales.available %}
+      <a href="/{{ lang }}/{{ page.url | no_lang }}">{{ lang }}</a>
+    {% endfor %}
+  </div>
+  <a href="/{{ locale }}"></a>
+</hgroup>

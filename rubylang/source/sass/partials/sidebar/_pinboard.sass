@@ -1,0 +1,11 @@
+#pinboard_linkroll
+  .pin-title, .pin-description
+    display: block
+    margin-bottom: .5em
+  .pin-tag
+    +hover-link
+    @extend .aside-alt-link
+    &:after
+      content: ','
+    &:last-child:after
+      content: ''

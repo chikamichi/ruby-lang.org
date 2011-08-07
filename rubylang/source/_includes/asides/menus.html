@@ -1,0 +1,29 @@
+{% capture locale %}{{ page.url | truncate: 3, "" | remove: "/" }}{% endcapture %}
+{% if locale == "" %}{% assign locale = "en" %}{% endif %}
+{% if page.locale %}{% assign locale = page.locale %}{% endif %}
+{% for menu in site.locales[locale].menus %}
+<section id="menus">
+  <div class="menu-title">
+    <span>{{ menu.title }}</span>
+    {{ menu.subtitle }}
+  </div>
+  <ul class="nav">
+  {% for link in menu.links %}
+    {% capture url %}/{{ locale }}/{{ link.url }}{% endcapture %}
+    {% if link.url contains 'http://' or link.url contains 'https://' %}
+      {% assign url = link.url %}
+    {% endif %}
+
+    {% assign current = nil %}
+    {% if page.url == link.url %}
+      {% assign current = 'current' %}
+    {% endif %}
+
+    <li class="{% if forloop.first %}first{% endif %} {{ current }} {% if forloop.last %}last{% endif %}">
+      <a class="{{ current }}" href="{{ url }}">{{ link.text }}</a>
+      {% if link.subtext %}<span>{{ link.subtext }}</span>{% endif %}
+    </li>
+  {% endfor %}
+  </ul>
+</section>
+{% endfor %}

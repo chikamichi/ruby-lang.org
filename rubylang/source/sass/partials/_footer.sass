@@ -1,0 +1,16 @@
+body > footer
+  @extend .sans
+  font-size: .8em
+  color: $footer-color
+  text-shadow: lighten($footer-bg, 5) 0 1px
+  background-color: $footer-bg
+  +background(image-url("noise.png"), linear-gradient(lighten($footer-bg, 8), $footer-bg, darken($footer-bg, 11)))
+  border-top: 1px solid $footer-border-top
+  position: relative
+  padding-top: 1em
+  padding-bottom: 1em
+  z-index: 1
+  text-shadow: none
+  p:last-child
+    margin-bottom: 0
+
