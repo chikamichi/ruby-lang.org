@@ -31,7 +31,8 @@ Goals:
 What's been done so far:
 
 * Thor tasks
-* Jekyll application (templates, basic structure, helpers) – based on Octopress
+* The Jekyll application (templates, basic structure, helpers) – with a little design refresh based on Octopress excellent theme
+* A few pages (check under `en` and `fr` subdirectories), but more is coming really soon
 * Many discussions on vit-core@ruby-lang.org about what to do next
 
 What's missing so far:
