@@ -43,4 +43,4 @@ What's missing so far:
 * The actual content overhaul (re-thinking everything)
 * Deploy tasks
 * Asking Matz
-* Production-ready check and deployment
+* Production-ready checks (links, urls, content missing…) and deployment
