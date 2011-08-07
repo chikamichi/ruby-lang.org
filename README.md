@@ -13,6 +13,7 @@ This is the "official" port, created by current contributors to ruby-lang.org (t
 ``` bash
     git clone git@github.com:chikamichi/ruby-lang.org.git
     cd ruby-lang.org
+    bundle
     thor admin:preview
     firefox http://localhost:4000
 ```
