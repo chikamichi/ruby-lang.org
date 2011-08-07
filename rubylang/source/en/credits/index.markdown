@@ -6,11 +6,11 @@ comments: false
 sharing: false
 footer: false
 ---
-ruby-lang.org is a community effort, which source code is crafted at [github][http://github.com/chikamichi/ruby-lang.org]. Several tools are used:
+ruby-lang.org is a community effort, which source code is crafted at [github][chikamichi/ruby-lang.org]. Several tools are used:
 
-* [Jekyll][http://github.com/mojombo/jekyll] for processing the templates
-* [Octopress][http://octopress.org] for its plugins and Classic theme
-* [Thor][https://github.com/wycats/thor/wiki] for maintenance CLI
-* [Compass][compass-style.org] for Sass development
-* [Pygments][http://pygments.org] and [pygments.rb][http://rubygems.org/gems/pygments.rb] for code highlighting
+* [Jekyll][jekyll] for processing the templates
+* [Octopress][octopress] for its plugins and Classic theme
+* [Thor][thor] for maintenance CLI
+* [Compass][compass] for Sass development
+* [Pygments][pygments] and [pygments.rb][pygments.rb] for code highlighting
 * and a few more!
