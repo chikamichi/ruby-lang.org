@@ -1,1 +1,1 @@
-SEE [http://github.com/rubylang/ruby-lang.org](http://github.com/rubylang/ruby-lang.org).
+**SEE [http://github.com/ruby/ruby-lang.org](http://github.com/ruby/ruby-lang.org)**.
